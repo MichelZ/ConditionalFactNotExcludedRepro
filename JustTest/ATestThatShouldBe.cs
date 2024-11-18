@@ -31,12 +31,14 @@ namespace JustTest
         }
 
         [SkipOnPlatform(TestPlatforms.Any, "Just for fun!")]
+        [Fact]
         public void IgnoredUsingSkipOn()
         {
             Assert.Fail("This should not see the light of day");
         }
 
         [ActiveIssue("Dummy")]
+        [Fact]
         public void IgnoredUsingActiveIssue()
         {
             Assert.Fail("This should not see the light of day");
